@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+body{
+    background-color: var(--OffBlack);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    width: 370px;
+    background-color: var(--DarkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 15px;
+    padding-inline: 5px;
+    padding-block: 30px;
+}
+
+.card img{
+    width: 92px;
+    border-radius: 100%;
+}
+
+.card h1{
+    color: var(--White);
+    font-weight: 600    ;
+}
+
+.card p{
+    font-size: 14px;
+    color: var(--White);
+}
+
+.card h2{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Green);
+}
+
+.card a{
+    width: 300px;
+    background-color: var(--Grey);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.card a:hover{
+    color:  var(--DarkGrey);
+    background-color: var(--Green);
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: var(--White);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
